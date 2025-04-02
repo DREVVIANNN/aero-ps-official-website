@@ -608,6 +608,7 @@ box-sizing: border-box;
 .services__icon{
   display: inline-block;
   position: relative;
+  width: 3rem;
   margin-bottom: 2rem;
 }
 
@@ -1027,6 +1028,68 @@ box-sizing: border-box;
   .aerodiscord{
     width: 250px;
   }
+}
+
+/* Full-page loading overlay */
+#loading {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  transition: opacity 1s ease-out;
+}
+
+/* Make the loading GIF responsive */
+#loading img {
+  width: 200px; /* Default size */
+  max-width: 80%; /* Make it responsive */
+  height: auto;
+}
+
+/* Hide content initially */
+#content {
+  display: none;
+  text-align: center;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+
+/* 📌 Responsive Design */
+
+/* For tablets (iPads) */
+@media (max-width: 1024px) {
+  #loading img {
+      width: 150px;
+  }
+  #content {
+      font-size: 18px;
+  }
+}
+
+/* For mobile phones */
+@media (max-width: 768px) {
+  #loading img {
+      width: 150px;
+  }
+  #content {
+      font-size: 16px;
+  }
+}
+
+/* Fade-out animation */
+.fade-out {
+  opacity: 0;
+  pointer-events: none; /* Prevents interaction */
+}
+
+/* Fade-in animation for content */
+.fade-in {
+  opacity: 1;
 }
 
 @media screen and (min-width: 1500px){
