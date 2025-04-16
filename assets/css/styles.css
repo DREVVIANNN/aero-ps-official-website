@@ -567,6 +567,7 @@ box-sizing: border-box;
   display: inline-flex;
   align-items: center;
   column-gap: .5rem;
+  cursor: pointer;
   transition: color .4s;
 }
 

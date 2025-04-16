@@ -141,8 +141,8 @@ window.onload = function() {
 };
 
 function powertunnel() {
-    alert("!COPY! : https://gtpshost.com/AeroPS-NEW.txt");
+    alert("!COPY! : https://gtpshost.com/AERO-PS.txt");
 }
 function ios() {
-    alert("!COPY! : https://ios.gtpshost.com/AeroPS-NEW");
+    alert("!COPY! : https://ios.gtpshost.com/AERO-PS");
 }
